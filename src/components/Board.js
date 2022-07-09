@@ -16,6 +16,3 @@ const Board = () => {
 }
 
 export default Board
-
-//remove <PolardForm/> [x]
-

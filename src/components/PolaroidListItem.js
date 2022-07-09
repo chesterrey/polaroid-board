@@ -3,8 +3,6 @@ import {useNavigate} from 'react-router-dom'
 
 const PolaroidListItem = ({polaroidData, index}) => {
   
-  const databaseURL = 'http://127.0.0.1:8887';
-
   const [isPortrait, setIsPortrait] = useState(true);
   const [orientation, setOrientation] = useState('');
   const [imageElement, setImageElement] = useState();
@@ -89,7 +87,3 @@ const PolaroidListItem = ({polaroidData, index}) => {
 }
 
 export default PolaroidListItem
-
-//remove databaseURL [x]
-
-//replace img source file path to local path [x]

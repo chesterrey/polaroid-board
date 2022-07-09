@@ -4,9 +4,6 @@ import polaroidListData from '../data'
 const PolaroidDetail = () => {
 
     const {id} = useParams();
-    // const PolaroidDataURL = `http://localhost:8000/api/polaroid-detail/${id}/`
-    // const databaseURL = 'http://127.0.0.1:8887';
-
     const [imageElement, setImageElement] = useState();
     const [imageStyle, setImageStyle] = useState({}); 
     const [containerHeight, setContainerHeight] = useState('');
