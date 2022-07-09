@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patrick+Hand+SC&display=swap');
+
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Patrick Hand SC', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../public/static/images/background.jpg');
+    background-attachment: local;
+}
+
+/* header styles start*/
+
+.header{
+    background-color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.7vw 0;
+    box-shadow: 0px 5px 29px -5px #000000;
+    width: 100%;
+}
+
+.header h1{
+    font-family: 'Archivo Black', sans-serif;
+    color: #F5F5F5;
+}
+
+.h1-A{    
+    transform: rotate(-9deg);
+}
+.h1-and{    
+    transform: rotate(17deg);
+    margin: 0 2.7vw;
+}
+.h1-C{    
+    transform: rotate(17deg);
+}
+
+/* header styles end*/
+
+/* board start */
+
+.board{
+    padding: 10.7vw 1em 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* board end */
+
+/* polaroid list item styles start */
+
+.polaroid-list-item{
+    aspect-ratio: 5/8;
+    padding: 5vw 2.5vw 1.25vw;
+    width: 36%;
+    background-color: #F5F5F5;
+    font-family: 'Patrick Hand SC', cursive;
+    overflow:auto;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 3vw;
+    transform-origin: top right;
+    /* margin-bottom: 15vw; */
+    position: relative;
+    transition: transform 0.8s ease;
+}
+
+.right{
+    margin-left: auto;
+    transform-origin: top left;
+    
+}
+
+
+.image-container{
+    /* background-color: #2C2C2C; */
+    aspect-ratio: 3/4;
+    color: white;
+    font-size: 4.3vw;
+    outline: solid black 0.25vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2C2C;
+}
+
+.image-container img{
+    width: 100%;
+    z-index: 99;
+    /* opacity: 40%; */
+}
+
+.polaroid-list-item h3{
+    font-size: 3.2vw;
+    text-align: left;
+    font-weight:100;
+}
+
+.polaroid-list-item p{
+    font-size: 2.4vw;
+    text-align: right;
+}
+
+    /* pin styles start */
+
+.pin-bottom{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4vw;
+    height: 4vw;
+    background-color: #EE2B2B;
+    border-radius: 50%;
+    box-shadow: 0 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .pin-bottom{
+    top: 0;
+    left: 0;
+}
+
+
+.pin-top{
+    width: 75%;
+    height: 75%;
+    background-color: #EE2B2B;
+    box-shadow: 0 0 1vw;
+    border-radius: 50%;
+}
+
+
+    /* pin styles end */
+
+/* polaroid list item styles end */
+
+
+/* polaroid detail styles start */
+
+.polaroid-detail{
+    aspect-ratio: 5/8;
+    margin: 0 auto;
+    padding: 11vw 5.5vw 2.75vw;
+    width: 80%;
+    background-color: #F5F5F5;
+    font-family: 'Patrick Hand SC', cursive;
+    overflow:auto;
+    border-radius: 1.1vw;
+    box-shadow: 0 0 3vw;
+    transform-origin: top left;
+    margin-bottom: 8px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.form{
+    background-color: #2C2C2C;
+}
+
+.close-btn{
+    width: 4vw;
+    margin-top: 2.7vw;
+    margin-right: 2.7vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.polaroid-detail h1{
+    font-size: 7.04vw;
+    width:60vw;
+    text-align: left;
+    font-weight:100;
+    font-family: 'Patrick Hand SC', cursive;
+    background-color: transparent;
+}
+.polaroid-detail input:focus{
+    background-color: transparent;
+    outline: 0px solid;
+}
+
+.polaroid-detail p{
+    font-size: 5.28vw;
+    text-align: right;
+}
+
+.title-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 2.7vw;
+}
+
+.edit-btn, .delete-btn{
+    width: 6vw;
+}
+
+/* polaroid detail styles end */
+
+/* add-btn styles start */
+
+.add-btn{
+    width: 15vw;
+    background-color: white;
+    box-shadow: 0 0 3vw;
+    border-radius: 50%;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    margin-right: 7vw;
+    margin-bottom: 7vw;
+    z-index: 999;
+}
+
+.pin-btn{
+    width: 15vw;
+    height: 15vw;
+    background-color: white;
+    box-shadow: 0 0 3vw;
+    border-radius: 50%;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    margin-right: 7vw;
+    margin-bottom: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin-btn img{
+    width: 50%;
+}
+
+/* add-btn styles end */
+
+.file-upload {
+    border-radius: 3px;
+    background-color: #F5F5F5;
+    padding: 0 2.7vw 0.8vw;
+    color: #2C2C2C;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 10vw;
+    position: absolute;
+}
+
+.file-upload input {
+    overflow: hidden;
+    width: 0;
+}
